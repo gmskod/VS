@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pagina Inicial</h1>
+</div>
+<ul>
+    <li><a href="@Url.Action("Index", "Livro")">Livros</a></li>
+    <li><a href="@Url.Action("Index", "Autor")">Autores</a></li>
+    <li><a href="@Url.Action("Index", "Assunto")">Assuntos</a></li>
+    <li><a href="@Url.Action("Relatorio", "Relatorios")">Relatório de Livros</a></li>
+</ul>

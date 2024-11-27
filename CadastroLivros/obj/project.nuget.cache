@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lCARCFS+vZM=",
+  "success": true,
+  "projectFilePath": "c:\\Users\\guilh\\Documents\\VS\\CadastroLivros\\CadastroLivros.sqlproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,27 @@
+@model IEnumerable<Livraria.Models.RelatorioLivro>
+
+<h1>Relatório de Livros</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Livro</th>
+            <th>Ano de Publicação</th>
+            <th>Valor</th>
+            <th>Autor</th>
+            <th>Assunto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Livro</td>
+                <td>@item.AnoPublicacao</td>
+                <td>@item.Valor</td>
+                <td>@item.Autor</td>
+                <td>@item.Assunto</td>
+            </tr>
+        }
+    </tbody>
+</table>

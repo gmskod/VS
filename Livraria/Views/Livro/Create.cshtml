@@ -1,0 +1,74 @@
+@model Livraria.Models.Livro
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Livro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Editora" class="control-label"></label>
+                <input asp-for="Editora" class="form-control" />
+                <span asp-validation-for="Editora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Edicao" class="control-label"></label>
+                <input asp-for="Edicao" class="form-control" />
+                <span asp-validation-for="Edicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnoPublicacao" class="control-label"></label>
+                <input asp-for="AnoPublicacao" class="form-control" />
+                <span asp-validation-for="AnoPublicacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Valor" class="control-label"></label>
+                <input asp-for="Valor" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
+            </div>
+            <!-- Novo campo para selecionar autores -->
+            <div class="form-group">
+                <label for="Autores">Autores:</label>
+                <select multiple name="autoresIds" class="form-control">
+                    @foreach (var autor in ViewBag.Autores)
+                    {
+                        <option value="@autor.CodAu">@autor.Nome</option>
+                    }
+                </select>
+            </div>
+
+            <!-- Novo campo para selecionar assuntos -->
+            <div class="form-group">
+                <label for="Assuntos">Assuntos:</label>
+                <select multiple name="assuntosIds" class="form-control">
+                    @foreach (var assunto in ViewBag.Assuntos)
+                    {
+                        <option value="@assunto.CodAs">@assunto.Descricao</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

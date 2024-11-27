@@ -1,0 +1,11 @@
+c:\Users\guilh\Documents\VS\CadastroLivros\bin\Debug\CadastroLivros.dacpac
+c:\Users\guilh\Documents\VS\CadastroLivros\bin\Debug\CadastroLivros.dll
+c:\Users\guilh\Documents\VS\CadastroLivros\bin\Debug\CadastroLivros.pdb
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\CadastroLivros.sqlproj.AssemblyReference.cache
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\CadastroLivros.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\Model.xml
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\refactor.xml
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\postdeploy.sql
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\predeploy.sql
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\CadastroLivros.dll
+c:\Users\guilh\Documents\VS\CadastroLivros\obj\Debug\CadastroLivros.pdb
